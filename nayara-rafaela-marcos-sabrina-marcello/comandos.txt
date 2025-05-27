@@ -3,7 +3,7 @@ git init
 
 git config --global user.name "seu-nome-de-usuario"
 
-git config --global user.eamil "seu-email-de-usuario"
+git config --global user.email "seu-email-de-usuario"
 
 git clone url-nuvem
 
