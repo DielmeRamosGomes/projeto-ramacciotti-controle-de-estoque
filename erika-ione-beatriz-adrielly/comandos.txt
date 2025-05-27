@@ -1,0 +1,24 @@
+// comandos para criar um repositório local
+git init
+
+git config --global user.name "seu-nome-de-usuario"
+
+git config --global user.eamil "seu-email-de-usuario"
+
+git clone url-nuvem
+
+git branch -M branch main
+
+// ATENÇÃO SEMPRE ATUALIZAR O PROJETO ANTES DE CODIFICAR
+// comando para pegar os arquivos do github
+git pull origin main
+
+// comandos para mandar arquivos para o github
+git add .
+
+git commit -M "mensagem de atualização"
+
+git push origin main
+
+
+
