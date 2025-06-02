@@ -1,1 +1,1 @@
-Alterado por Rauã
+create database loja_online;
