@@ -7,7 +7,9 @@ git config --global user.email "seu-email-de-usuario"
 
 git clone url-nuvem
 
-git branch -M branch main
+git branch -M main
+
+git remote add origin url
 
 // ATENÇÃO SEMPRE ATUALIZAR O PROJETO ANTES DE CODIFICAR
 // comando para pegar os arquivos do github
