@@ -1,4 +1,5 @@
 create database loja_online;
+/* ALTER USER 'root'@'localhost IDENTIFIED BY'1234';
 
 create table loja_online.usuarios(
     id_usuario int auto_increment primary key,
