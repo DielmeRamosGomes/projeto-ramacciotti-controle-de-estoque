@@ -9,7 +9,7 @@ git clone url-nuvem
 
 git branch -M main
 
-git remote add url
+git remote add origin url
 
 // ATENÇÃO SEMPRE ATUALIZAR O PROJETO ANTES DE CODIFICAR
 // comando para pegar os arquivos do github
