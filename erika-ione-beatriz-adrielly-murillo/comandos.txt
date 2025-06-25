@@ -23,4 +23,58 @@ git commit -M "mensagem de atualização"
 git push origin main
 
 frango enorme perfeito para comer agora
-qualquer coisa
+qualquer coisa 
+
+CREATE DATABASE loja_online;
+
+USE loja_online;
+
+CREATE TABLE usuarios (
+
+ id_usuario INT PRIMARY KEY AUTO_INCREMENT,
+
+ nome VARCHAR(100),
+
+ data_cadastro DATE,
+
+ email VARCHAR(100) UNIQUE,
+
+ senha VARCHAR(255),
+
+ ativo BOOLEAN DEFAULT TRUE
+
+);
+
+CREATE TABLE vendedores (
+
+ id_vendedor INT PRIMARY KEY AUTO_INCREMENT,
+
+ nome VARCHAR(100),
+
+ data_cadastro DATE,
+
+ email VARCHAR(100) UNIQUE,
+
+ ativo BOOLEAN DEFAULT TRUE
+
+);
+
+CREATE TABLE produtos (
+
+ id_produto INT PRIMARY KEY AUTO_INCREMENT,
+
+ nome VARCHAR(100),
+
+ descricao TEXT,
+
+ id_vendedor INT,
+
+ data_cadastro DATE,
+
+ preco_unitario DECIMAL(10,2),
+
+ ativo BOOLEAN DEFAULT TRUE,
+
+ FOREIGN KEY (id_vendedor) REFERENCES vendedores(id_vendedor)
+
+);
