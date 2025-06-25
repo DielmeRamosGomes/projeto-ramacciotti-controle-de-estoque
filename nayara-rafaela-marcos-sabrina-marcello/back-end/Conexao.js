@@ -5,7 +5,7 @@ class Conexao {
         this.config = {
              host: host,
              port: port,
-             user: useer,
+             user: user,
              password: password,
              database: database,
              waitForConnections: true,
