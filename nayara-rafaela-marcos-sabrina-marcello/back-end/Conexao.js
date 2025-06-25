@@ -35,9 +35,9 @@ class Conexao {
                   await this.conectar();
 
               }
-              this.pool.getConnection();
+              
           }
-          return
+          return this.pool.getConnection();
         }
 
     }
