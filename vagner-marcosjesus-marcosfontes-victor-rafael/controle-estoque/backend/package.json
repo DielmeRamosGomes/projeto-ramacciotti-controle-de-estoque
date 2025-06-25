@@ -1,0 +1,22 @@
+{
+  "name": "controle-estoque",
+  "version": "1.0.0",
+  "description": "Sistema de controle de estoque para loja online",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.10.9",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "author": "Seu Nome",
+  "license": "ISC"
+}

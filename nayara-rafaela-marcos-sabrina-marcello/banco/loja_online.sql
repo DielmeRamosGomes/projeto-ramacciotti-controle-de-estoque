@@ -1,4 +1,5 @@
 Create database loja_online;
+/*ALTER USER 'root'@'localhost' IDENTIFIED BY'1234';*/
 
 CREATE TABLE Vendedor (
     id_vendedor INT AUTO_INCREMENT PRIMARY KEY,
