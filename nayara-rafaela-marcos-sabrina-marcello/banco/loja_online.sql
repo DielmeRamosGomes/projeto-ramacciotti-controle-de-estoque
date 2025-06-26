@@ -1,6 +1,11 @@
 Create database loja_online;
 
-ALTER USER 'root'@'localhost' IDENTIFIED BY'1234';
+ALTER USER 'root'@'localhost' IDENTIFIED BY'';
+SELECT Host, USER FROM mysql.user WHERE USER = 'root';
+
+USE mysql;
+UPDATE user SET authentication_string = PASSWORD('') WHERE User = 'root' AND Host = 'localhost';
+FLUSH PRIVILEGES;
 
 CREATE TABLE loja_online.Vendedor (
     id_vendedor INT AUTO_INCREMENT PRIMARY KEY,

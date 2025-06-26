@@ -1,7 +1,7 @@
 import mysql from 'mysql2/promise'
 
 class Conexao {
-    constructor(host, port, user, possward, database) {
+    constructor(host, port, user, password, database) {
         this.config = {
             host: host,
             port: port,
