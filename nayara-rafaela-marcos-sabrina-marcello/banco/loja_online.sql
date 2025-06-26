@@ -1,10 +1,10 @@
 Create database loja_online;
 
-ALTER USER 'root'@'localhost' IDENTIFIED BY'';
-SELECT Host, USER FROM mysql.user WHERE USER = 'root';
-
-USE mysql;
-UPDATE user SET authentication_string = PASSWORD('') WHERE User = 'root' AND Host = 'localhost';
+-- Conecte-se ao MySQL como root (se conseguir por outros meios ou após redefinição)
+-- AVISO: Isso é INSEGURO para produção.
+ALTER USER 'root'@'localhost' IDENTIFIED BY '1234' AND PLUGIN 'mysql_native_password';
+-- Ou para versões mais antigas:
+UPDATE mysql.user SET authentication_string='', plugin='mysql_native_password' WHERE User='root' AND Host='localhost';
 FLUSH PRIVILEGES;
 
 CREATE TABLE loja_online.Vendedor (
@@ -14,6 +14,9 @@ CREATE TABLE loja_online.Vendedor (
     email VARCHAR(100) NOT NULL UNIQUE,
     ativo BOOLEAN DEFAULT TRUE
 );
+
+insert into loja_online.Vendedor(nome, data_cadastro, email, ativo) 
+    values("Carlos", "2025-06-25", "carlos@exemplo.com", TRUE);
 
 CREATE TABLE loja_online.Usuario (
     id_usuario INT AUTO_INCREMENT PRIMARY KEY,

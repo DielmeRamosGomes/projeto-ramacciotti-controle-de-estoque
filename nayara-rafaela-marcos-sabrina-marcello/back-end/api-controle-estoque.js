@@ -23,7 +23,7 @@ app.use(express.json());
 let lista_produtos = [];
 
 async function usarConexao() {
-    const conexao = new Conexao('localhost', 3306, "root", '1234', "loja_online");
+    const conexao = new Conexao('localhost', 3306, 'root', '1234', 'loja_online');
     const pool = await conexao.conectar();
     const connection = await pool.getConnection();
     return connection;
