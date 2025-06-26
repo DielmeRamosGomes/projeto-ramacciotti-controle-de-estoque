@@ -1,7 +1,8 @@
 Create database loja_online;
+
 /*ALTER USER 'root'@'localhost' IDENTIFIED BY'1234';*/
 
-CREATE TABLE Vendedor (
+CREATE TABLE loja_online.Vendedor (
     id_vendedor INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
     data_cadastro date,
@@ -9,7 +10,7 @@ CREATE TABLE Vendedor (
     ativo BOOLEAN DEFAULT TRUE
 );
 
-CREATE TABLE Usuario (
+CREATE TABLE loja_online.Usuario (
     id_usuario INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
     data_cadastro DATE,
@@ -18,7 +19,7 @@ CREATE TABLE Usuario (
     ativo BOOLEAN DEFAULT TRUE
 );
 
-CREATE TABLE Produto (
+CREATE TABLE loja_online.Produto (
     id_produto INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
     descricao TEXT,
@@ -28,3 +29,6 @@ CREATE TABLE Produto (
     ativo BOOLEAN DEFAULT TRUE,
     FOREIGN KEY (id_vendedor) REFERENCES Vendedor(id_vendedor)
 );
+
+select * from loja_online.Produto;
+
