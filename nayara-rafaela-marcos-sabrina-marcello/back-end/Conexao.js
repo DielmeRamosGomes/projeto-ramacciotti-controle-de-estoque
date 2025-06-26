@@ -1,4 +1,4 @@
-import mysql from 'mysql12/promise'
+import mysql from 'mysql2/promise'
 
 class Conexao {
     constructor(host, port, user, possward, database) {

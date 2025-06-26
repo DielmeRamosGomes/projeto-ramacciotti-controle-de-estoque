@@ -4,7 +4,7 @@
 
 import express from 'express'
 import Produto from './Produto.js'
-import Conexao from 'conexao.js'
+import Conexao from './Conexao.js'
 import cors from 'cors'
 
 const app = express();
