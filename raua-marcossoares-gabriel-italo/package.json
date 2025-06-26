@@ -1,0 +1,24 @@
+{
+  "name": "projeto-ramacciotti-controle-de-estoque",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DielmeRamosGomes/projeto-ramacciotti-controle-de-estoque.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DielmeRamosGomes/projeto-ramacciotti-controle-de-estoque/issues"
+  },
+  "homepage": "https://github.com/DielmeRamosGomes/projeto-ramacciotti-controle-de-estoque#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0",
+    "mysql2": "^3.14.1"
+  }
+}
