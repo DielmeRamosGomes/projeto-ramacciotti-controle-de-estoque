@@ -4,7 +4,7 @@ import Funcionalidades from './components/Funcionalidades';
 
 function App() {
  return (
-   <div id="container-app"></div>
+   <div id="container-app">
     <Login />
     <Funcionalidades />
   </div>

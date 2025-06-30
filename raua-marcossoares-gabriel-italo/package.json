@@ -18,7 +18,10 @@
   "homepage": "https://github.com/DielmeRamosGomes/projeto-ramacciotti-controle-de-estoque#readme",
   "description": "",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^5.1.0",
-    "mysql2": "^3.14.1"
+    "mysql2": "^3.14.1",
+    "react-router-dom": "^7.6.3",
+    "sequelize": "^6.37.7"
   }
 }
